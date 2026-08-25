@@ -12,6 +12,7 @@ import SecurityFramework from "../components/SecurityFramework";
 import ResourceDownload from "../components/ResourcesDownload";
 import SecurityadvisorCTA from "../components/SecurityadvisorCTA";
 import BacktoTop from "../components/BacktoTop";
+import RadarMap from "../components/RadarMap";
 
 const sectors = [
   "Finance & Fintech",
