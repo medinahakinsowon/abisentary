@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  @apply bg-void-navy text-paper font-body antialiased;
+}
+
+/* Faint blueprint grid on every page */
+.blueprint-bg {
+  background-image:
+    linear-gradient(#1c2745 1px, transparent 1px),
+    linear-gradient(90deg, #1c2745 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.35;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 75%);
+          mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 75%);
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible, a:focus-visible, button:focus-visible {
+  outline: 2px solid #4b83ff;
+  outline-offset: 2px;
+}
