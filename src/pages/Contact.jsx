@@ -63,8 +63,9 @@ export default function Contact() {
     <Layout>
       <PageHeader
         status={<StatusChip>Open channel</StatusChip>}
-        title="Let's talk about where you're exposed."
-        body="Whether it's a full audit or a quick question, tell us what's going on and we'll reply with next steps — not a sales pitch."
+        title="Request a Qoute."
+        body="Tell Us About Your Business And Security Need, Our Team Will Get back to You Within with a Tailored Proposal."
+        span="24 hours"
       />
 
       <section className="px-8 py-16">
@@ -132,7 +133,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full rounded bg-signal-blue px-7 py-3.5 text-center text-[15px] font-semibold text-white shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
+                className="w-full rounded bg-signal-blue px-7 py-3.5 text-center text-[15px] font-semibold text-deep-steel shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
               >
                 Send message
               </button>

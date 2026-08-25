@@ -12,6 +12,7 @@ export function SectionHead({
   body,
   center = false,
   className = "",
+  span,
 }) {
   return (
     <div
@@ -24,13 +25,13 @@ export function SectionHead({
   );
 }
 
-export function PageHeader({ status, title, body }) {
+export function PageHeader({ status, title, body, span }) {
   return (
     <section className="px-8 pb-6 pt-14">
-      <div className="mx-auto max-w-content">
+      <div className="mx-auto max-w-content ">
         {status}
-        <h1 className="mt-4.5 max-w-2xl text-[32px] sm:text-[46px]">{title}</h1>
-        <p className="mb-0 max-w-lg text-[17px]">{body}</p>
+        <h1 className="mt-4.5 max-w-2xl text-[32px] sm:text-[45px] font-bold">{title}</h1>
+        <p className="mb-0 max-w-lg text-[17px]">{body} <span className="font-bold">{span}</span></p>
       </div>
     </section>
   );
