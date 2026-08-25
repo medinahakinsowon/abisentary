@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../layout/Layout";
 import StatusChip from "../components/StatusChip";
-import RadarMap from "../components/RadarMap";
+import Radarmap from "../components/Radarmap";
 import ServiceCard from "../components/ServiceCard";
 import AwardBanner from "../components/AwardBanner";
 import CTABanner from "../components/CTABanner";
@@ -205,7 +205,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <RadarMap />
+          <Radarmap />
         </div>
       </section>
 

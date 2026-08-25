@@ -1,4 +1,4 @@
-export default function RadarMap() {
+export default function Radarmap() {
   return (
     <div
       className="relative mx-auto aspect-square w-full max-w-[420px]"
