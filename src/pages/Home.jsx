@@ -169,7 +169,7 @@ export default function Home() {
       <section className="px-8 pb-10 pt-16">
         <div className="mx-auto grid max-w-content items-center gap-12 md:grid-cols-[1fr_460px]">
           <div>
-            <StatusChip className="pt-6">Status: Monitoring · 24/7</StatusChip>
+            {/* <StatusChip className="pt-6">Status: Monitoring · 24/7</StatusChip> */}
             <h1 className="mt-5.5 text-[38px] font-bold leading-[1.1] tracking-tight sm:text-[60px]">
               Cybersecurity backbone{" "}
               <span className="text-signal-blue">for Digital businesses.</span>
