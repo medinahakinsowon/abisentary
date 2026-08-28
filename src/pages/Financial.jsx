@@ -32,7 +32,7 @@ export default function FinancialInstitutions() {
             <StatusChip>Industry Focus</StatusChip>
             <h1 className="mt-5.5 text-[38px] font-bold leading-[1.1] tracking-tight sm:text-[54px]">
               financial Institutions.{" "}
-              <span className="text-signal-blue-bright">
+              <span className="text-signal-blue">
                 Security.
               </span>
             </h1>
@@ -42,7 +42,7 @@ export default function FinancialInstitutions() {
             <div className="mb-11 flex flex-wrap gap-3.5">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 rounded bg-signal-blue px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
+                className="inline-flex items-center gap-2 rounded bg-signal-blue px-7 py-3.5 text-[15px] font-semibold text-deep-steel shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
               >
                 Talk To An Industry Expert
               </Link>
@@ -74,7 +74,7 @@ export default function FinancialInstitutions() {
         <div className="mx-auto grid max-w-content grid-cols-2 gap-8 text-center sm:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label}>
-              <div className="mb-1.5 font-mono text-[22px] font-semibold text-signal-blue-bright sm:text-[26px]">
+              <div className="mb-1.5 font-mono text-[22px] font-semibold text-signal-blue sm:text-[26px]">
                 {s.value}
               </div>
               <div className="font-mono text-[13px] text-paper-faint">
@@ -90,7 +90,7 @@ export default function FinancialInstitutions() {
       {/* Who we serve */}
       <section className="px-8 py-16">
         <div className="mx-auto max-w-content">
-          <div className="mb-3.5 flex items-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue-bright">
+          <div className="mb-3.5 flex items-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue">
             Who we serve
           </div>
           <h2 className="mb-7 text-[28px] sm:text-[32px]">
@@ -308,7 +308,7 @@ function Arrow() {
     <section className="px-8 py-24">
       <div className="mx-auto max-w-content">
         <div className="mx-auto mb-16 max-w-xl text-center">
-          <div className="mb-3.5 flex items-center justify-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue-bright">
+          <div className="mb-3.5 flex items-center justify-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue">
             Challenges &amp; solutions
           </div>
           <h2 className="text-[28px] sm:text-[32px]">What financial institutions are up against — and what we do about it.</h2>
@@ -322,7 +322,7 @@ function Arrow() {
           {pairs.map((pair) => (
             <div
               key={pair.challenge.title}
-              className="flex flex-col overflow-hidden rounded-2xl border border-perimeter bg-deep-steel-2 lg:flex-row lg:items-stretch"
+              className="flex flex-col overflow-hidden rounded-2xl border border-perimeter bg-deep-steel lg:flex-row lg:items-stretch"
             >
               {/* Challenge */}
               <div className="flex-1 border-b border-perimeter-soft p-7 lg:border-b-0 lg:border-r">
@@ -342,8 +342,8 @@ function Arrow() {
 
               {/* Solution */}
               <div className="flex-1 p-7">
-                <div className="mb-3 flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-wider text-signal-blue-bright">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-md border border-signal-blue/30 bg-signal-blue/10 text-signal-blue-bright">
+                <div className="mb-3 flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-wider text-signal-blue">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-md border border-signal-blue/30 bg-signal-blue/10 text-signal-blue">
                     {pair.icon}
                   </span>
                   Our solution

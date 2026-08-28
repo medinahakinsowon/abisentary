@@ -16,7 +16,7 @@ export default function CTABanner({
       <div className="relative z-10 flex-shrink-0">
         <Link
           to={to}
-          className="inline-flex items-center gap-2 rounded bg-signal-blue px-7 py-3.5 text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
+          className="inline-flex items-center gap-2 rounded bg-signal-blue px-7 py-3.5 text-sm font-semibold text-deep-steel shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
         >
           {ctaLabel}
         </Link>
