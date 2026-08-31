@@ -227,13 +227,13 @@ export const navMenu = [
         title: "Abiscan",
         description: "File & URL Vulnerability Scanner",
         icon: IconScan,
-        href: "abiscan",
+        href: "/abiscan",
       },
       {
         title: "ChaseFraud",
         description: "A Powered Fraud Detection System",
         icon: IconShield,
-        href: "chasefraud",
+        href: "/chasefraud",
       },
       {
         title: "AbiQR",

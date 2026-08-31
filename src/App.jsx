@@ -19,6 +19,8 @@ import SecurityAssess from './pages/SecurityAssess';
 import ComplianceReady from './pages/ComplianceReady';
 import ManagedDectec from './pages/ManagedDectec';
 import FractionalV from './pages/FractionalV';
+import AbiScan from './pages/AbiScan';
+import ChaseFraud from './pages/ChaseFraud';
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
       <Route path="/compliance" element={<ComplianceReady />} />
       <Route path="/detection" element={<ManagedDectec />} />
       <Route path="/fractional" element={<FractionalV />} />
+      <Route path="/abiscan" element={<AbiScan />} />
+      <Route path="/chasefraud" element={<ChaseFraud/>} />
     </Routes>
   );
 }

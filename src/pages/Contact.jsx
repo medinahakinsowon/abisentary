@@ -18,7 +18,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      description: "Drop us a message and we'll respond within 24 hours",
+      description:
+        "Drop us a message and we'll respond within 24 hours",
       value: "admin@abisentarytechnologies.com",
       action: "Send us an email",
       href: "mailto:admin@abisentarytechnologies.com",
@@ -43,7 +44,7 @@ const Contact = () => {
       description: "Get quick answers from our team on WhatsApp.",
       value: "Chat on Whatsapp",
       action: "Start a conversation",
-      href: "https://wa.me/2348000000000",
+      href: "https://wa.me/2347018441890",
       iconBg: "bg-void-navy",
       iconColor: "text-signal-blue",
     },
