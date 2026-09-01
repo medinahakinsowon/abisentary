@@ -239,13 +239,13 @@ export const navMenu = [
         title: "AbiQR",
         description: "Secured QR code Management",
         icon: IconQr,
-        href: "abiqr",
+        href: "/abiqr",
       },
       {
         title: "AbiMirror",
         description: "Reliable Background Checks",
         icon: IconEye,
-        href: "abimirror",
+        href: "/abimirror",
       },
       {
         title: "AbiComplyStarter",
@@ -264,12 +264,6 @@ export const navMenu = [
         description: "Know Your Customer With Ease",
         icon: IconClipboardCheck,
         href: "abiyc",
-      },
-      {
-        title: "Abimirror",
-        description: "Ai Fueled Background Checks",
-        icon: IconEye,
-        href: "abimirror",
       },
     ],
     footerLink: { label: "See all products", href: "#" },

@@ -21,6 +21,10 @@ import ManagedDectec from './pages/ManagedDectec';
 import FractionalV from './pages/FractionalV';
 import AbiScan from './pages/AbiScan';
 import ChaseFraud from './pages/ChaseFraud';
+import AbiQr from "./pages/AbiQr"
+import AbiMirror from "./pages/AbiMirror"
+import AbiComplyStarter from "./pages/AbiComplyStarter"
+import AbiMail from './pages/AbiMail';
 
 
 function App() {
@@ -48,7 +52,11 @@ function App() {
       <Route path="/detection" element={<ManagedDectec />} />
       <Route path="/fractional" element={<FractionalV />} />
       <Route path="/abiscan" element={<AbiScan />} />
-      <Route path="/chasefraud" element={<ChaseFraud/>} />
+      <Route path="/chasefraud" element={<ChaseFraud />} />
+      <Route path="/abiqr" element={<AbiQr />} />
+      <Route path="/abimirror" element={<AbiMirror />} />
+      <Route path="/abicomply" element={<AbiComplyStarter />} />
+      <Route path="/abimail" element={<AbiMail />} />
     </Routes>
   );
 }

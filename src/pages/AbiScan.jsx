@@ -88,7 +88,7 @@ const audiences = [
   },
 ];
 
-export default function UrlScannerLanding() {
+export default function AbiScan() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#050b14] text-white">
       {/* Background glow */}

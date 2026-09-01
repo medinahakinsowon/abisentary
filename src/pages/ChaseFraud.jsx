@@ -14,7 +14,7 @@ export default function ChaseFraud() {
           <div>
             <StatusChip>Abisentry Product · ChaseFraud</StatusChip>
             <h1 className="mt-5.5 text-[38px] font-bold leading-[1.1] tracking-tight sm:text-[54px]">
-              Stop fraud <span className="text-signal-blue-bright">before it costs you.</span>
+              Stop fraud <span className="text-signal-blue">before it costs you.</span>
             </h1>
             <p className="mb-8 max-w-md text-lg">
               ChaseFraud monitors your transactions in real time, flags suspicious activity the moment it happens,
@@ -60,6 +60,8 @@ export default function ChaseFraud() {
 
 
 
+
+
  function ChaseFraudDemoForm() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -71,100 +73,69 @@ export default function ChaseFraud() {
 
   return (
     <section id="request-demo" className="px-8 py-24">
-      <div className="mx-auto max-w-content">
-        <div className="mx-auto grid max-w-4xl items-start gap-14 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <div className="mb-3.5 flex items-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue-bright">
-              Request a demo
-            </div>
-            <h2 className="mb-5 text-[28px] sm:text-[32px]">See ChaseFraud on your own data.</h2>
-            <p className="mb-0 text-[15px]">
-              Tell us a bit about your business and we'll walk you through how ChaseFraud catches fraud on your
-              actual transaction patterns — no generic sales deck.
-            </p>
-          </div>
+      <div className="mx-auto max-w-2xl rounded-2xl border border-perimeter bg-deep-steel-2 p-8 sm:p-12">
+        <h2 className="mb-4 text-center text-[28px] sm:text-[34px]">Request a Demo of ChaseFraud</h2>
+        <p className="mb-9 text-center text-[15px]">
+          Fill out the form below and our team will get back to you shortly to schedule a personalized walkthrough.
+        </p>
 
-          <div className="rounded-2xl border border-perimeter bg-deep-steel-2 p-8">
-            {submitted && (
-              <div className="mb-5 flex items-center gap-2.5 rounded border border-success-green/35 bg-success-green/10 px-4 py-3.5 text-sm text-success-green">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                Request received — we'll be in touch to schedule your demo.
-              </div>
-            )}
-
-            <form onSubmit={handleSubmit}>
-              <div className="grid gap-4.5 sm:grid-cols-2">
-                <Field id="name" label="Full name" placeholder="Jane Okoro" required />
-                <Field id="company" label="Company" placeholder="Your business" required />
-              </div>
-              <div className="grid gap-4.5 sm:grid-cols-2">
-                <Field id="email" label="Work email" type="email" placeholder="you@company.com" required />
-                <div className="mb-5">
-                  <label htmlFor="size" className="mb-2 block font-mono text-xs uppercase tracking-wide text-paper-faint">
-                    Company size
-                  </label>
-                  <select
-                    id="size"
-                    name="size"
-                    className="w-full rounded border border-perimeter bg-void-navy px-3.5 py-3 text-[14.5px] text-paper transition focus:border-signal-blue focus:outline-none"
-                  >
-                    <option>1–10 employees</option>
-                    <option>11–50 employees</option>
-                    <option>51–200 employees</option>
-                    <option>200+ employees</option>
-                  </select>
-                </div>
-              </div>
-              <div className="mb-5">
-                <label htmlFor="message" className="mb-2 block font-mono text-xs uppercase tracking-wide text-paper-faint">
-                  What fraud problem are you trying to solve?
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell us about the transaction volumes, payment rails, or fraud patterns you're dealing with."
-                  className="min-h-[110px] w-full resize-y rounded border border-perimeter bg-void-navy px-3.5 py-3 text-[14.5px] text-paper transition focus:border-signal-blue focus:outline-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full rounded bg-signal-blue px-7 py-3.5 text-center text-[15px] font-semibold text-white shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
-              >
-                Request demo
-              </button>
-              <p className="mb-0 mt-3.5 text-[12.5px] text-paper-faint">
-                By submitting, you agree to be contacted by Abisentry Technologies regarding your request.
-              </p>
-            </form>
+        {submitted && (
+          <div className="mb-6 flex items-center gap-2.5 rounded border border-success-green/35 bg-success-green/10 px-4 py-3.5 text-sm text-success-green">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Request received — we'll be in touch to schedule your demo.
           </div>
-        </div>
+        )}
+
+        <form onSubmit={handleSubmit}>
+          <div className="grid gap-5 sm:grid-cols-2">
+            <Field id="name" label="Full Name" required />
+            <Field id="email" label="Work Email" type="email" required />
+          </div>
+          <Field id="company" label="Company Name" required />
+          <div className="mb-7">
+            <label htmlFor="message" className="mb-2 block text-sm text-paper">
+              How can we help you? <span className="text-signal-blue">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              className="min-h-[140px] w-full resize-y rounded-lg border border-perimeter bg-void-navy px-4 py-3 text-[14.5px] text-paper transition focus:border-signal focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-signal-blue px-7 py-4 text-[15px] font-bold text-deep-steel transition hover:bg-black"
+          >
+            Submit Request
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <path d="M15.5 1.5L1.5 7.5L7.5 9.5L9.5 15.5L15.5 1.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" fill="currentColor" fillOpacity="0.15" />
+            </svg>
+          </button>
+        </form>
       </div>
     </section>
   );
 }
 
-function Field({ id, label, type = "text", placeholder, required = false }) {
+function Field({ id, label, type = "text", required = false }) {
   return (
     <div className="mb-5">
-      <label htmlFor={id} className="mb-2 block font-mono text-xs uppercase tracking-wide text-paper-faint">
-        {label}
+      <label htmlFor={id} className="mb-2 block text-sm text-paper">
+        {label} {required && <span className="text-signal-blue-bright">*</span>}
       </label>
       <input
         id={id}
         name={id}
         type={type}
-        placeholder={placeholder}
         required={required}
-        className="w-full rounded border border-perimeter bg-void-navy px-3.5 py-3 text-[14.5px] text-paper transition focus:border-signal-blue focus:outline-none"
+        className="w-full rounded-lg border border-perimeter bg-void-navy px-4 py-3 text-[14.5px] text-paper transition focus:border-signal-blue focus:outline-none"
       />
     </div>
   );
 }
-
-
-
 
  function ChaseFraudHeroArt() {
   return (
@@ -291,7 +262,7 @@ const steps = [
     <section className="px-8 py-24">
       <div className="mx-auto max-w-content">
         <div className="mx-auto mb-20 max-w-xl text-center">
-          <div className="mb-3.5 flex items-center justify-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue-bright">
+          <div className="mb-3.5 flex items-center justify-center gap-2.5 font-mono text-xs uppercase tracking-wider text-signal-blue">
             How it works
           </div>
           <h2 className="text-[28px] sm:text-[32px]">From transaction to resolved case.</h2>
@@ -302,14 +273,14 @@ const steps = [
 
           {steps.map((step) => (
             <div key={step.number} className="relative text-center">
-              <div className="relative z-10 mx-auto mb-6 flex h-[80px] w-[80px] items-center justify-center rounded-full border border-perimeter bg-deep-steel-2 text-signal-blue-bright">
+              <div className="relative z-10 mx-auto mb-6 flex h-[80px] w-[80px] items-center justify-center rounded-full border border-perimeter bg-deep-steel-2 text-signal-blue">
                 {step.icon}
                 <span className="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full border-2 border-void-navy bg-signal-blue text-xs font-bold text-white">
                   {step.number}
                 </span>
               </div>
               <h3 className="mb-1.5 text-lg">{step.title}</h3>
-              <div className="mb-3 font-mono text-[11px] uppercase tracking-wider text-signal-blue-bright">
+              <div className="mb-3 font-mono text-[11px] uppercase tracking-wider text-signal-blue">
                 {step.tagline}
               </div>
               <p className="mx-auto mb-0 max-w-[220px] text-[13.5px]">{step.body}</p>
