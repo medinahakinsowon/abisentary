@@ -60,7 +60,7 @@ export default function AbiMail() {
       ===================================================== */}
         <section className="relative">
           {/* Decorative glow */}
-          <div className="pointer-events-none absolute left-[15%] top-20 h-72 w-72 rounded-full bg-cyan-500/10 blur-[120px]" />
+          <div className="pointer-events-none absolute left-[15%] top-20 h-72 w-72 rounded-full bg-void-navy blur-[120px]" />
 
           <div className="mx-auto max-w-7xl px-5 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24">
             <div className="grid items-center gap-14 lg:grid-cols-2">

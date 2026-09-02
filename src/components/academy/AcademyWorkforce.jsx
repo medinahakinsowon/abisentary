@@ -120,7 +120,7 @@ const AcademyWorkforce = () => {
   };
 
   return (
-    <section className="relative overflow-hidden px-6 py-24 sm:px-8 lg:px-12">
+    <section className="relative overflow-hidden px-6 py-24 sm:px-8 lg:px-12" id="workforce">
       {/* Background decorations */}
       <div className="pointer-events-none absolute left-1/4 top-20 h-72 w-72 rounded-full bg-signal-blue/[0.06] blur-3xl" />
       <div className="pointer-events-none absolute bottom-20 right-0 h-72 w-72 rounded-full bg-alert-amber/[0.05] blur-3xl" />

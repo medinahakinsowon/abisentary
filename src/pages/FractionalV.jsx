@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../layout/Layout";
 import { PageHeader } from "../components/HelperComponent";
+import { Link } from "react-router-dom";
 
 import {
   Users,
@@ -121,6 +122,34 @@ const FractionalV = () => {
             </div>
           </div>
         </section>
+         <div className="flex flex-col items-center justify-center mb-8 gap-5">
+                  <div>
+                    <h1 className="lg:text-[30px] text-[15px] font-bold">Ready to secure your infrastructure</h1>
+                  </div>
+                  <Link to="/contact">
+                    <button className="group inline-flex items-center gap-3 rounded-md border border-signal-blue/40 bg-signal-blue px-6 py-3 text-sm font-semibold text-deep-steel backdrop-blur-sm transition-all duration-300 hover:border-signal-blue hover:bg-signal-blue hover:shadow-[0_0_25px_rgba(21,93,252,0.3)]">
+                      <span>Speak with an Expert</span>
+        
+                      <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-all duration-300 group-hover:bg-white/20">
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          className="transition-transform duration-300 group-hover:translate-x-0.5"
+                        >
+                          <path
+                            d="M5 12H19M13 6L19 12L13 18"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </Link>
+                </div>
       </div>
     </Layout>
   );

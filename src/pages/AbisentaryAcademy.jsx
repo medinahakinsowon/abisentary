@@ -45,13 +45,13 @@ export default function Academy() {
               </span>
             </h1>
             <p className="mb-8 max-w-md text-lg">
-              Build an Ai ready and cyber-resilient workforce
-              with role-based education, employee assessment,
-              security simulations and measurable workforce readiness.
+              Build an Ai ready and cyber-resilient workforce with role-based
+              education, employee assessment, security simulations and
+              measurable workforce readiness.
             </p>
             <div className="mb-11 flex flex-wrap gap-3.5">
               <a
-                href="#programs"
+                href="#workforce-assessment"
                 className="inline-flex items-center gap-2 rounded bg-signal-blue px-7 py-3.5 text-[15px] font-bold text-deep-steel shadow-[0_0_0_1px_rgba(21,93,252,0.4),0_8px_24px_-8px_rgba(21,93,252,0.6)] transition hover:-translate-y-px hover:bg-signal-blue-bright"
               >
                 Request Workforce Assessment
@@ -97,22 +97,22 @@ export default function Academy() {
 
       <AcademyRisk />
       <AcademyComparison />
-      <AcademyCycle/>
-      <Academyresilient/>
-      <EmployeeRiskExplorer/>
-      <AcademyLearningPaths/>
-      <AcademyThreats/>
-      <AcademyAiPolicy/>
+      <AcademyCycle />
+      <Academyresilient />
+      <EmployeeRiskExplorer />
+      <AcademyLearningPaths />
+      <AcademyThreats />
+      <AcademyAiPolicy />
 
-      <AcademyDashboard/>
+      <AcademyDashboard />
 
-      <AcademyOrganization/>
+      <AcademyOrganization />
 
-      <AcademyWhat/>
+      <AcademyWhat />
 
-      <AcademyTrustTrack/>
+      <AcademyTrustTrack />
 
-      <AcademyWorkforce/>
+      <AcademyWorkforce />
 
       {/* <div id="programs">
         <AcademyPrograms />

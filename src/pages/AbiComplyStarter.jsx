@@ -107,7 +107,7 @@ export default function AbiComplyStarter() {
             <div className="grid items-center gap-14 lg:grid-cols-[1fr_0.9fr]">
               {/* Hero content */}
               <div>
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-600">
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-void-navy px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-600">
                   <Sparkles size={14} />
                   Compliance Intelligence Platform
                 </div>

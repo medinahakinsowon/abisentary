@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../layout/Layout'
 import { PageHeader } from '../components/HelperComponent';
+import { Link } from 'react-router-dom';
 
 
 
@@ -43,27 +44,29 @@ const TechAdvisor = () => {
 
       <section className="px-8 py-12">
         <div className="mx-auto max-w-content">
-          <button className="group inline-flex items-center gap-3 rounded-md border border-signal-blue/40 bg-signal-blue/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-signal-blue hover:bg-signal-blue hover:shadow-[0_0_25px_rgba(21,93,252,0.3)]">
-            <span>Book a Consultation</span>
+          <Link to="/contact">
+            <button className="group inline-flex items-center gap-3 rounded-md border border-signal-blue/40 bg-signal-blue px-6 py-3 text-sm font-semibold text-deep-steel backdrop-blur-sm transition-all duration-300 hover:border-signal-blue hover:bg-signal-blue hover:shadow-[0_0_25px_rgba(21,93,252,0.3)]">
+              <span>Speak with an Expert</span>
 
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-all duration-300 group-hover:bg-white/20">
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="transition-transform duration-300 group-hover:translate-x-0.5"
-              >
-                <path
-                  d="M5 12H19M13 6L19 12L13 18"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-          </button>
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-all duration-300 group-hover:bg-white/20">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="transition-transform duration-300 group-hover:translate-x-0.5"
+                >
+                  <path
+                    d="M5 12H19M13 6L19 12L13 18"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </Link>
 
           <div className="grid grid-cols-1 mt-14 gap-5 sm:grid-cols-1 lg:grid-cols-2">
             {cards.map((card) => {
@@ -91,7 +94,6 @@ const TechAdvisor = () => {
                   <p className="text-sm leading-6 text-white/60">
                     {card.description}
                   </p>
-
 
                   {/* Subtle hover glow */}
                   <div className="pointer-events-none absolute -bottom-10 -right-10 h-24 w-24 rounded-full bg-signal-blue/10 blur-3xl transition-all duration-500 group-hover:bg-signal-blue/20" />

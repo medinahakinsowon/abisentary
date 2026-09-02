@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact"
 import Careers from "./pages/Careers"
-import Blog from "./pages/Blog"
+
 import CaseStudies from "./pages/CaseStudies"
 import GuidesAndReport from './pages/GuidesAndReport';
 import AbisentaryAcademy from './pages/AbisentaryAcademy';
@@ -25,6 +25,8 @@ import AbiQr from "./pages/AbiQr"
 import AbiMirror from "./pages/AbiMirror"
 import AbiComplyStarter from "./pages/AbiComplyStarter"
 import AbiMail from './pages/AbiMail';
+import AbiYc from './pages/AbiYc';
+import BlogPage from "./pages/BlogPage"
 
 
 function App() {
@@ -37,7 +39,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/service" element={<Service />} />
       <Route path="/career" element={<Careers />} />
-      <Route path="/blog" element={<Blog />} />
+      
       <Route path="/casestudy" element={<CaseStudies />} />
       <Route path="/guides" element={<GuidesAndReport />} />
       <Route path="/academy" element={<AbisentaryAcademy />} />
@@ -57,6 +59,8 @@ function App() {
       <Route path="/abimirror" element={<AbiMirror />} />
       <Route path="/abicomply" element={<AbiComplyStarter />} />
       <Route path="/abimail" element={<AbiMail />} />
+      <Route path="/abiyc" element={<AbiYc />} />
+      <Route path="/blog" element={<BlogPage />} />
     </Routes>
   );
 }
